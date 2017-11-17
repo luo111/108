@@ -24,6 +24,7 @@ function count()
 				score1+=5;
 		}
 		alert('填空题得分为'+score1);
+		return score1;
 	}
 	//return score1;
 	score1();
@@ -46,6 +47,7 @@ function count()
 				score2+=10;
 		}
 		alert('选择题得分为'+score2);
+		return score2;
 	}
 	//return score2;
 	score2();
@@ -76,6 +78,7 @@ function count()
 				score3+=10;
 		}
 		alert('多选题得分为'+score3);
+		return score3;
 	}
 	score3();
 
@@ -97,6 +100,7 @@ function count()
 				score4+=10;
 		}
 		alert('判断题得分为'+score4);
+		return score4;
 	}
 //return score4;
 	score4();
@@ -120,6 +124,7 @@ function count()
 				score5+=10;
 		}
 		alert('简答题得分为'+score5);
+		return score5;
 	}
 //return score5;
 	score5();
@@ -127,7 +132,11 @@ function count()
 
 	//alert('填空题得分为'+score1\n+'选择题得分为'+score2\n+'多选题得分为'+score3\n+'判断题得分为'+score4);
 	//return score=score1+score2+score3+score4+score5; 
-}
+	//score=score1+score2+score3+score4+score5;
+var score=parseInt(score1)+parseInt(score2)+parseInt(score3)+parseInt(score4)+parseInt(score5);
 alert('总分为'+score);
+}
+//score=score1+score2+score3+score4+score5;
+//alert('总分为'+score);
 //alert('填空题得分为'+score1\n+'选择题得分为'+score2\n+'多选题得分为'+score3\n+'判断题得分为'+score4);
 count();
